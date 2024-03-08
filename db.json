@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "JavaScript Good Parts",
+      "author": "Douglas Crockford",
+      "year": 2008
+    },
+    {
+      "id": 2,
+      "title": "You Don’t Know JS",
+      "author": "Kyle Simpson",
+      "year": 2015
+    },
+    {
+      "id": 3,
+      "title": "Elodssdsdent JavaScript",
+      "author": "Marijn Haverbeke",
+      "year": 2018
+    },
+    {
+      "title": "Javascript for Beginners",
+      "author": "Bart",
+      "year": 2024,
+      "id": 4
+    },
+    {
+      "title": "new book",
+      "author": "bart",
+      "year": 2024,
+      "id": 5
+    },
+    {
+      "title": "An Introduction to JavaScript",
+      "author": "Anyone",
+      "year": "2022",
+      "id": 6
+    }
+  ]
+}

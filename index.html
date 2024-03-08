@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Collection</title>
+  </head>
+  <body>
+    <h1>Book Collection</h1>
+    <div>
+      <input type="text" id="title" placeholder="Title" />
+      <input type="text" id="author" placeholder="Author" />
+      <input type="number" id="year" placeholder="Year" />
+      <button onclick="addBook()">Add Book</button>
+    </div>
+    <div>
+      <input type="text" id="filter-author" placeholder="Filter by author" />
+      <select id="sort">
+        <option value="title">Title</option>
+        <option value="year">Year</option>
+      </select>
+      <select id="sort-order">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+      <button onclick="loadBooks()">Filter/Sort</button>
+    </div>
+    <div>
+      <label for="itemsPerPage">Items per page:</label>
+      <select id="itemsPerPage" onchange="loadBooks()">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+    <ul id="book-list"></ul>
+    <div>
+      <button id="btnPrev" onclick="prevPage()">Previous</button>
+      <span id="page-info"></span>
+      <button id="btnNext" onclick="nextPage()">Next</button>
+    </div>
+    <div id="footer">
+      <div>Copyright © 2024</div>
+      <div>Created by Rafal Ciesielski</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

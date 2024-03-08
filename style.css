@@ -1,0 +1,59 @@
+body {
+  font-family: "Madimi One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: darkcyan;
+}
+
+h1 {
+  font-size: 50px;
+  color: limegreen;
+}
+
+button.delete-button {
+  background-color: firebrick;
+}
+
+button.update-button {
+  background-color: limegreen;
+}
+
+.edit-container {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+input,
+select {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+#btnPrev,
+#btnNext {
+  margin: 5px;
+}
+
+button {
+  padding: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+#footer {
+  padding: 10px;
+  display: contents;
+}
