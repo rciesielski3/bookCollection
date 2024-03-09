@@ -42,7 +42,7 @@ select {
 
 #btnPrev:disabled:hover,
 #btnNext:disabled:hover {
-  background-color: ;
+  background-color: firebrick;
 }
 
 button {
