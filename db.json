@@ -13,70 +13,64 @@
       "year": 2015
     },
     {
+      "id": 4,
       "title": "Jasvascript for Beginners",
       "author": "Bart",
-      "year": 2024,
-      "id": 4
+      "year": 2024
     },
     {
+      "id": 5,
       "title": "JavaScript: The Good Parts",
       "author": "Douglas Crockford",
-      "year": 2008,
-      "id": 5
+      "year": 2008
     },
     {
-      "title": "Eloquent JavaScript: A Modern Introduction to Programming",
+      "id": 6,
+      "title": "Eloque JavaScript: A Modern Introduction to Programming",
       "author": "Marijn Haverbeke",
-      "year": 2018,
-      "id": 6
+      "year": 2018
     },
     {
-      "title": "You Don't Know JS",
+      "id": 7,
+      "title": "You Don't Know JSss",
       "author": "Kyle Simpson",
-      "year": 2014,
-      "id": 7
+      "year": 2014
     },
     {
+      "id": 8,
       "title": "JavaScript: The Definitive Guide",
       "author": "David Flanagan",
-      "year": 2020,
-      "id": 8
+      "year": 2020
     },
     {
+      "id": 9,
       "title": "Learning JavaScript Design Patterns",
       "author": "Addy Osmani",
-      "year": 2012,
-      "id": 9
+      "year": 2012
     },
     {
+      "id": 10,
       "title": "Speaking JavaScript: An In-Depth Guide for Programmers",
       "author": "Axel Rauschmayer",
-      "year": 2014,
-      "id": 10
+      "year": 2014
     },
     {
+      "id": 11,
       "title": "Secrets of the JavaScript Ninja",
       "author": "John Resig",
-      "year": 2016,
-      "id": 11
+      "year": 2016
     },
     {
+      "id": 12,
       "title": "Functional-Light JavaScript: Pragmatic, Balanced FP in JavaScript",
       "author": "Kyle Simpson",
-      "year": 2018,
-      "id": 12
+      "year": 2018
     },
     {
-      "title": "JavaScript: The Good Parts",
-      "author": "Douglas Crockford",
-      "year": 2008,
-      "id": 13
-    },
-    {
+      "id": 14,
       "title": "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics",
       "author": "Jennifer Robbins",
-      "year": 2018,
-      "id": 14
+      "year": 2018
     }
   ]
 }

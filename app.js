@@ -106,6 +106,7 @@ async function editBookName(bookId) {
         editButton.style.display = "inline";
 
         titleInput.remove();
+        updateButton.remove();
       } catch (error) {
         console.error(`Error updating book: ${error}`);
       }
