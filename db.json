@@ -2,7 +2,7 @@
   "books": [
     {
       "id": 1,
-      "title": "JavaScript Good Parts",
+      "title": "JsavaScript Good Parts",
       "author": "Douglas Crockford",
       "year": 2008
     },
@@ -13,28 +13,70 @@
       "year": 2015
     },
     {
-      "id": 3,
-      "title": "Elodssdsdent JavaScript",
-      "author": "Marijn Haverbeke",
-      "year": 2018
-    },
-    {
-      "title": "Javascript for Beginners",
+      "title": "Jasvascript for Beginners",
       "author": "Bart",
       "year": 2024,
       "id": 4
     },
     {
-      "title": "new book",
-      "author": "bart",
-      "year": 2024,
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford",
+      "year": 2008,
       "id": 5
     },
     {
-      "title": "An Introduction to JavaScript",
-      "author": "Anyone",
-      "year": "2022",
+      "title": "Eloquent JavaScript: A Modern Introduction to Programming",
+      "author": "Marijn Haverbeke",
+      "year": 2018,
       "id": 6
+    },
+    {
+      "title": "You Don't Know JS",
+      "author": "Kyle Simpson",
+      "year": 2014,
+      "id": 7
+    },
+    {
+      "title": "JavaScript: The Definitive Guide",
+      "author": "David Flanagan",
+      "year": 2020,
+      "id": 8
+    },
+    {
+      "title": "Learning JavaScript Design Patterns",
+      "author": "Addy Osmani",
+      "year": 2012,
+      "id": 9
+    },
+    {
+      "title": "Speaking JavaScript: An In-Depth Guide for Programmers",
+      "author": "Axel Rauschmayer",
+      "year": 2014,
+      "id": 10
+    },
+    {
+      "title": "Secrets of the JavaScript Ninja",
+      "author": "John Resig",
+      "year": 2016,
+      "id": 11
+    },
+    {
+      "title": "Functional-Light JavaScript: Pragmatic, Balanced FP in JavaScript",
+      "author": "Kyle Simpson",
+      "year": 2018,
+      "id": 12
+    },
+    {
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford",
+      "year": 2008,
+      "id": 13
+    },
+    {
+      "title": "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics",
+      "author": "Jennifer Robbins",
+      "year": 2018,
+      "id": 14
     }
   ]
 }
