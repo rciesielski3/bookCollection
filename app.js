@@ -42,7 +42,7 @@ function displayBooks(books) {
     const li = document.createElement("li");
     const titleText = document.createElement("span");
 
-    titleText.style.fontWeight = "bold";
+    titleText.style.color = "white";
     titleText.textContent = book.title;
     titleText.setAttribute("id", `book-${book.id}`);
 

@@ -42,7 +42,7 @@ select {
 
 #btnPrev:disabled:hover,
 #btnNext:disabled:hover {
-  background-color: firebrick;
+  background-color: ;
 }
 
 button {
@@ -61,4 +61,5 @@ button:hover {
 #footer {
   padding: 10px;
   display: contents;
+  color: limegreen;
 }
