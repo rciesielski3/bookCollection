@@ -40,6 +40,11 @@ select {
   margin: 5px;
 }
 
+#btnPrev:disabled:hover,
+#btnNext:disabled:hover {
+  background-color: firebrick;
+}
+
 button {
   padding: 5px;
   background-color: cornflowerblue;

@@ -5,6 +5,8 @@ async function loadBooks() {
     const author = document.getElementById("filter-author").value;
     const sort = document.getElementById("sort").value;
     const sortOrder = document.getElementById("sort-order").value;
+    const nextPageButton = document.getElementById("btnNext");
+    const prevPageButton = document.getElementById("btnPrev");
 
     let booksPerPage = document.getElementById("itemsPerPage").value;
     let url = `http://localhost:3000/books?_page=${currentPage}&_limit=${booksPerPage}`;
@@ -21,6 +23,13 @@ async function loadBooks() {
     const books = await response.json();
 
     displayBooks(books);
+
+    if (books.length < booksPerPage) {
+      nextPageButton.disabled = true;
+    } else {
+      nextPageButton.disabled = false;
+    }
+    prevPageButton.disabled = currentPage === 1;
   } catch (error) {
     console.error(`Error loading books: ${error}`);
   }
