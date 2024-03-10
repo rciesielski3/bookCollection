@@ -5,15 +5,15 @@ let currentPage = 1;
 
 async function loadBooks() {
   try {
-    const author = document.getElementById("filter-author").value;
+    const authorFilter = document.getElementById("filter-author").value;
     const sort = document.getElementById("sort").value;
     const sortOrder = document.getElementById("sort-order").value;
 
     let booksPerPage = document.getElementById("itemsPerPage").value;
     let url = `http://localhost:3000/books?_page=${currentPage}&_limit=${booksPerPage}`;
 
-    if (author) {
-      url += `&author_like=${author}`;
+    if (authorFilter) {
+      url += `&author_like=${authorFilter}`;
     }
 
     if (sort) {
@@ -37,7 +37,6 @@ async function loadBooks() {
 }
 
 function displayBooks(books) {
-  // const bookList = document.getElementById("book-list");
   bookList.innerHTML = "";
   books.forEach((book) => {
     const li = document.createElement("li");
@@ -48,7 +47,7 @@ function displayBooks(books) {
     titleText.setAttribute("id", `book-${book.id}`);
 
     const authorYearText = document.createElement("span");
-    authorYearText.innerHTML = ` by ${book.author} (${book.year}) `;
+    authorYearText.textContent = ` by ${book.author} (${book.year}) `;
 
     const editButton = document.createElement("button");
     editButton.textContent = "Edit";
@@ -92,13 +91,16 @@ async function editBookName(bookId) {
       `.edit-button[book-id="${bookId}"]`
     );
 
-    let titleInput = nameElement.querySelector("input[type='text']");
     titleInput = document.createElement("input");
     titleInput.type = "text";
     titleInput.value = nameElement.textContent;
 
-    nameElement.parentNode.insertBefore(titleInput, editButton);
+    const textWidth = nameElement.offsetWidth;
+    titleInput.style.width = `${textWidth}px`;
 
+    nameElement.parentNode.insertBefore(titleInput, nameElement);
+
+    nameElement.textContent = "";
     editButton.style.display = "none";
 
     const updateButton = document.createElement("button");

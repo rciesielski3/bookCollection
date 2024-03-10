@@ -11,6 +11,9 @@ body {
 h1 {
   font-size: 50px;
   color: limegreen;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px cornflowerblue;
 }
 
 button.delete-button {
