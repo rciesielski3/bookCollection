@@ -1,3 +1,6 @@
+const bookList = document.getElementById("book-list");
+const nextPageButton = document.getElementById("btnNext");
+const prevPageButton = document.getElementById("btnPrev");
 let currentPage = 1;
 
 async function loadBooks() {
@@ -5,8 +8,6 @@ async function loadBooks() {
     const author = document.getElementById("filter-author").value;
     const sort = document.getElementById("sort").value;
     const sortOrder = document.getElementById("sort-order").value;
-    const nextPageButton = document.getElementById("btnNext");
-    const prevPageButton = document.getElementById("btnPrev");
 
     let booksPerPage = document.getElementById("itemsPerPage").value;
     let url = `http://localhost:3000/books?_page=${currentPage}&_limit=${booksPerPage}`;
@@ -36,7 +37,7 @@ async function loadBooks() {
 }
 
 function displayBooks(books) {
-  const bookList = document.getElementById("book-list");
+  // const bookList = document.getElementById("book-list");
   bookList.innerHTML = "";
   books.forEach((book) => {
     const li = document.createElement("li");
@@ -46,14 +47,13 @@ function displayBooks(books) {
     titleText.textContent = book.title;
     titleText.setAttribute("id", `book-${book.id}`);
 
-    const authorYearText = document.createTextNode(
-      ` by ${book.author} (${book.year}) `
-    );
+    const authorYearText = document.createElement("span");
+    authorYearText.innerHTML = ` by ${book.author} (${book.year}) `;
 
     const editButton = document.createElement("button");
     editButton.textContent = "Edit";
-    editButton.setAttribute("class", "edit-button");
     editButton.setAttribute("book-id", book.id);
+    editButton.setAttribute("class", "edit-button");
     editButton.onclick = () => editBookName(book.id);
 
     const deleteButton = document.createElement("button");
@@ -95,7 +95,7 @@ async function editBookName(bookId) {
     let titleInput = nameElement.querySelector("input[type='text']");
     titleInput = document.createElement("input");
     titleInput.type = "text";
-    titleInput.value = nameElement.textContent.trim();
+    titleInput.value = nameElement.textContent;
 
     nameElement.parentNode.insertBefore(titleInput, editButton);
 
