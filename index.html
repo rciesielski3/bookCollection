@@ -19,6 +19,9 @@
       <input type="number" id="year" placeholder="Year" />
       <button onclick="addBook()">Add Book</button>
     </div>
+    <div id="modal">
+      <div id="modal-message"></div>
+    </div>
     <div>
       <input type="text" id="filter-author" placeholder="Filter by author" />
       <select id="sort">
@@ -36,7 +39,7 @@
       <select id="itemsPerPage" onchange="loadBooks()">
         <option value="5">5</option>
         <option value="10">10</option>
-        <option value="20">20</option>
+        <option value="15">15</option>
       </select>
     </div>
     <ul id="book-list"></ul>

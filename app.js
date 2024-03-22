@@ -130,9 +130,23 @@ async function editBookName(bookId) {
 
 async function addBook() {
   try {
-    const title = document.getElementById("title").value;
+    let title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const year = document.getElementById("year").value;
+
+    if (!title || !author || !year) {
+      const missingInputs = [];
+      if (!title) missingInputs.push("Title");
+      if (!author) missingInputs.push("Author");
+      if (!year) missingInputs.push("Year");
+
+      showModal(
+        `Please enter the following fields: ${missingInputs.join(", ")}`
+      );
+      return;
+    }
+
+    title = title.charAt(0).toUpperCase() + title.slice(1);
 
     await fetch("http://localhost:3000/books", {
       method: "POST",
@@ -170,6 +184,18 @@ function prevPage() {
     currentPage--;
     loadBooks();
   }
+}
+
+function showModal(message) {
+  const modalMessage = document.getElementById("modal-message");
+  modalMessage.innerHTML = message;
+
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 2000);
 }
 
 document.addEventListener("DOMContentLoaded", loadBooks);

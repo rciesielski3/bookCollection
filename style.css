@@ -66,3 +66,15 @@ button:hover {
   display: contents;
   color: limegreen;
 }
+
+#modal {
+  display: none;
+  margin: 5px;
+}
+
+#modal-message {
+  background-color: firebrick;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}

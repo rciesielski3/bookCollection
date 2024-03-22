@@ -1,12 +1,6 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "JsavaScript Good Parts",
-      "author": "Douglas Crockford",
-      "year": 2008
-    },
-    {
       "id": 2,
       "title": "You Don’t Know JS",
       "author": "Kyle Simpson",
@@ -32,7 +26,7 @@
     },
     {
       "id": 7,
-      "title": "You Don't Know JSss",
+      "title": "You Don't Know JS",
       "author": "Kyle Simpson",
       "year": 2014
     },
@@ -62,7 +56,7 @@
     },
     {
       "id": 12,
-      "title": "Functional-Light JavaScript: Pragmatic, Balanced FP in JavaScript",
+      "title": "JS beginning",
       "author": "Kyle Simpson",
       "year": 2018
     },
@@ -71,6 +65,12 @@
       "title": "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics",
       "author": "Jennifer Robbins",
       "year": 2018
+    },
+    {
+      "title": "JS beginning",
+      "author": "nobady",
+      "year": "2030",
+      "id": 15
     }
   ]
 }
